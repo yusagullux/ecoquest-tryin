@@ -18,73 +18,114 @@
       rel="stylesheet"
     />
     <style>
-      * {
-        box-sizing: border-box;
-      }
+        * {
+          box-sizing: border-box;
+        }
 
-      body {
-        background: url("/forest.png") no-repeat center center/cover;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+        body {
+          background: url("/forest.png") no-repeat center center/cover;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          font-family: "Inter", sans-serif;
+        }
 
-      h1,
-      h2,
-      h3 {
-        font-family: "Poppins", sans-serif;
-      }
+        h1, h2, h3 {
+          font-family: "Poppins", sans-serif;
+          margin: 0;
+        }
 
-      label,
-      p,
-      a {
-        font-family: "Inter", sans-serif;
-        text-decoration: none;
-      }
+        h2 {
+          color: #2e7d32;
+          font-weight: 600;
+        }
 
-      form {
-        background-color: white;
-        width: 400px;
-        height: 500px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding-top: 42px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      }
+        h3 {
+          color: #388e3c;
+          margin-bottom: 20px;
+          font-weight: 500;
+        }
 
-      .email-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+        label, p, a {
+          font-family: "Inter", sans-serif;
+          text-decoration: none;
+          color: #333;
+        }
 
-      .password-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+        form {
+          background-color: #ffffff;
+          width: 400px;
+          min-height: 500px;
+          border-radius: 18px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 40px 30px;
+          gap: 20px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+          backdrop-filter: blur(5px);
+        }
 
-      button {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        height: 50px;
-        width: 100px;
-        border-radius: 120px;
-        margin-top: 10px;
-      }
-    </style>
+        .email-box,
+        .password-box {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+
+        label {
+          align-self: center;
+          font-size: 15px;
+          font-weight: 500;
+          color: #2e7d32;
+        }
+
+        input {
+          height: 40px;
+          width: 80%;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          padding: 8px 10px;
+          font-size: 15px;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease;
+          outline: none;
+        }
+
+        input:focus {
+          border-color: #4caf50;
+          box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+        }
+
+        button {
+          background-color: #4caf50;
+          color: white;
+          border: none;
+          height: 45px;
+          width: 130px;
+          border-radius: 120px;
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        button:hover {
+          transform: scale(1.07);
+          background-color: #81d4fa;
+        }
+</style>
+
   </head>
   <body>
     <div class="sign-up">
       <form action="">
-        <h2>Welcome To EcoQuest</h2>
+        <h2>Welcome To EcoQuest!</h2>
         <h3>Create Your Account</h3>
         <div class="email-box">
           <label for="email">Email</label><br />
@@ -96,7 +137,7 @@
           <input type="password" id="password" name="password" required />
         </div>
 
-        <button id="submit">Sign Up</button>
+        <button id="submit">Login</button>
         <a href="login.html">I already have an account</a>
       </form>
     </div>

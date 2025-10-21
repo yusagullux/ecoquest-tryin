@@ -25,10 +25,10 @@
 }
 
 body {
-  background-color: var(--color-bg-light);
   margin: 0;
   color: var(--color-text);
   font-family: var(--font-secondary);
+
   /* TODO: maybe add a fade-in later */
 }
 
@@ -261,7 +261,7 @@ section {
 
 /* CALL TO ACTION */
 #call-to-action {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80')
+  background: url('/mountains.png')
     no-repeat center center/cover;
   color: white;
   box-shadow: var(--shadow-light);
@@ -314,8 +314,9 @@ footer a:hover {
   color: var(--color-primary);
 }
 
+
+
 /* --------- MEDIA QUERIES --------- */
-/* (probably should refactor later) */
 
 @media (min-width: 521px) and (max-width: 768px) {
   .containers {
